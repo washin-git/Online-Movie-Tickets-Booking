@@ -28,16 +28,19 @@ namespace MovieTicketsBooking
             {
                 SqlConnection con = new SqlConnection(@"Data Source=(local);Initial Catalog=Theatre;Integrated Security=True");
                 con.Open();
-                String quary = "Insert INTO [Login] ([username],[password]) VALUES('" + txtUsername.Text + "','" + txtPassword.Text + "')";
-                SqlDataAdapter SDA = new SqlDataAdapter(quary, con);
-                SDA.SelectCommand.ExecuteNonQuery();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "update [Login] set username = '" + txtUsername.Text + "',password = '" + txtPassword.Text + "' where [username] ='" + txtUsername.Text + "'";
+                cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Chaneged Successfully!!!");
 
+                MessageBox.Show("Update Successfully!");
                 txtUsername.Text = "";
                 txtPassword.Text = "";
+                
             }
             
+
 
         }
 

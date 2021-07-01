@@ -49,9 +49,9 @@
             // 
             // txtMN
             // 
-            this.txtMN.Location = new System.Drawing.Point(462, 68);
+            this.txtMN.Location = new System.Drawing.Point(351, 68);
             this.txtMN.Name = "txtMN";
-            this.txtMN.Size = new System.Drawing.Size(100, 22);
+            this.txtMN.Size = new System.Drawing.Size(211, 22);
             this.txtMN.TabIndex = 0;
             // 
             // MName
@@ -96,23 +96,23 @@
             // 
             // txtML
             // 
-            this.txtML.Location = new System.Drawing.Point(462, 251);
+            this.txtML.Location = new System.Drawing.Point(351, 251);
             this.txtML.Name = "txtML";
-            this.txtML.Size = new System.Drawing.Size(100, 22);
+            this.txtML.Size = new System.Drawing.Size(211, 22);
             this.txtML.TabIndex = 5;
             // 
             // txtMT
             // 
-            this.txtMT.Location = new System.Drawing.Point(462, 135);
+            this.txtMT.Location = new System.Drawing.Point(351, 135);
             this.txtMT.Name = "txtMT";
-            this.txtMT.Size = new System.Drawing.Size(100, 22);
+            this.txtMT.Size = new System.Drawing.Size(211, 22);
             this.txtMT.TabIndex = 6;
             // 
             // txtTik
             // 
-            this.txtTik.Location = new System.Drawing.Point(462, 322);
+            this.txtTik.Location = new System.Drawing.Point(351, 322);
             this.txtTik.Name = "txtTik";
-            this.txtTik.Size = new System.Drawing.Size(100, 22);
+            this.txtTik.Size = new System.Drawing.Size(211, 22);
             this.txtTik.TabIndex = 7;
             this.txtTik.TextChanged += new System.EventHandler(this.txtTik_TextChanged);
             // 
@@ -128,9 +128,9 @@
             // 
             // txtMST
             // 
-            this.txtMST.Location = new System.Drawing.Point(462, 190);
+            this.txtMST.Location = new System.Drawing.Point(351, 190);
             this.txtMST.Name = "txtMST";
-            this.txtMST.Size = new System.Drawing.Size(100, 22);
+            this.txtMST.Size = new System.Drawing.Size(211, 22);
             this.txtMST.TabIndex = 9;
             // 
             // btnBook
@@ -169,9 +169,9 @@
             // 
             // txtAmount
             // 
-            this.txtAmount.Location = new System.Drawing.Point(462, 396);
+            this.txtAmount.Location = new System.Drawing.Point(351, 396);
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(100, 22);
+            this.txtAmount.Size = new System.Drawing.Size(211, 22);
             this.txtAmount.TabIndex = 13;
             this.txtAmount.TextChanged += new System.EventHandler(this.txtAmount_TextChanged);
             // 

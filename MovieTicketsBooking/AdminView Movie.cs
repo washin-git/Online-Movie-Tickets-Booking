@@ -67,5 +67,24 @@ namespace MovieTicketsBooking
             dataGridViewAdminViewMovie.DataSource = dt;
             conn.Close();
         }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            display_data();
+        }
+        public void display_data()
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from Movie";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+
+            SqlDataAdapter dataadap = new SqlDataAdapter(cmd);
+            dataadap.Fill(dt);
+            dataGridViewAdminViewMovie.DataSource = dt;
+            con.Close();
+        }
     }
 }

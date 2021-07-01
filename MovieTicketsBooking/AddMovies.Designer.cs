@@ -46,62 +46,69 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 83);
+            this.label1.Location = new System.Drawing.Point(200, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Movie Name :- ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(80, 160);
+            this.label2.Location = new System.Drawing.Point(197, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = " Movie Type :- ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(80, 244);
+            this.label3.Location = new System.Drawing.Point(199, 244);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Show Time :- ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(80, 327);
+            this.label4.Location = new System.Drawing.Point(199, 327);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Movie Language :- ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtAdminAddMName
             // 
-            this.txtAdminAddMName.Location = new System.Drawing.Point(290, 83);
+            this.txtAdminAddMName.Location = new System.Drawing.Point(415, 83);
             this.txtAdminAddMName.Name = "txtAdminAddMName";
             this.txtAdminAddMName.Size = new System.Drawing.Size(171, 22);
             this.txtAdminAddMName.TabIndex = 4;
+            this.txtAdminAddMName.TextChanged += new System.EventHandler(this.txtAdminAddMName_TextChanged);
             // 
             // txtAdminAddMType
             // 
-            this.txtAdminAddMType.Location = new System.Drawing.Point(290, 160);
+            this.txtAdminAddMType.Location = new System.Drawing.Point(415, 160);
             this.txtAdminAddMType.Name = "txtAdminAddMType";
             this.txtAdminAddMType.Size = new System.Drawing.Size(171, 22);
             this.txtAdminAddMType.TabIndex = 5;
+            this.txtAdminAddMType.TextChanged += new System.EventHandler(this.txtAdminAddMType_TextChanged);
             // 
             // txtAdminAddLanguage
             // 
-            this.txtAdminAddLanguage.Location = new System.Drawing.Point(290, 322);
+            this.txtAdminAddLanguage.Location = new System.Drawing.Point(412, 322);
             this.txtAdminAddLanguage.Name = "txtAdminAddLanguage";
             this.txtAdminAddLanguage.Size = new System.Drawing.Size(171, 22);
             this.txtAdminAddLanguage.TabIndex = 7;
+            this.txtAdminAddLanguage.TextChanged += new System.EventHandler(this.txtAdminAddLanguage_TextChanged);
             // 
             // btnAdminSave
             // 
@@ -155,10 +162,11 @@
             // 
             this.dateTimePicker1.CustomFormat = "hh:mm:ss tt dd/MM/yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(290, 244);
+            this.dateTimePicker1.Location = new System.Drawing.Point(415, 244);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(171, 22);
             this.dateTimePicker1.TabIndex = 12;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // AdminAddMovies
             // 

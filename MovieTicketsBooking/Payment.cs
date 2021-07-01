@@ -94,19 +94,19 @@ namespace MovieTicketsBooking
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            if (txtCardNumber.Text != string.Empty || txtMM.Text != string.Empty || txtCVN.Text != string.Empty || txtYYYY.Text != string.Empty)
+            if (txtCardNumber.Text == string.Empty || txtCVN.Text == string.Empty || txtMM.Text == string.Empty || txtYYYY.Text == string.Empty)
+            {
+                MessageBox.Show("All Fiealds are Required ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             {
                 MessageBox.Show("Succsessfully Tickets Booked");
                 this.Hide();
                 UserHome movie = new UserHome();
-                movie.ShowDialog();
-               
+                movie.ShowDialog(); 
                 
             }
-            else
-            {
-                MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
 
         private void radioButtonmaster_CheckedChanged(object sender, EventArgs e)

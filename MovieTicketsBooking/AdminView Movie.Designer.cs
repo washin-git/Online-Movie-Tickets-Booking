@@ -36,17 +36,19 @@
             this.txtAdminViewLang = new System.Windows.Forms.TextBox();
             this.dateTimePickerShow = new System.Windows.Forms.DateTimePicker();
             this.btnAdminCancel = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdminViewMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewAdminViewMovie
             // 
             this.dataGridViewAdminViewMovie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAdminViewMovie.Location = new System.Drawing.Point(373, 37);
+            this.dataGridViewAdminViewMovie.Location = new System.Drawing.Point(331, 37);
             this.dataGridViewAdminViewMovie.Name = "dataGridViewAdminViewMovie";
             this.dataGridViewAdminViewMovie.RowHeadersWidth = 51;
             this.dataGridViewAdminViewMovie.RowTemplate.Height = 24;
-            this.dataGridViewAdminViewMovie.Size = new System.Drawing.Size(361, 349);
+            this.dataGridViewAdminViewMovie.ShowCellErrors = false;
+            this.dataGridViewAdminViewMovie.Size = new System.Drawing.Size(444, 349);
             this.dataGridViewAdminViewMovie.TabIndex = 0;
             // 
             // label1
@@ -112,12 +114,25 @@
             this.btnAdminCancel.UseVisualStyleBackColor = false;
             this.btnAdminCancel.Click += new System.EventHandler(this.btnAdminCancel_Click);
             // 
+            // btnLoad
+            // 
+            this.btnLoad.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLoad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLoad.Location = new System.Drawing.Point(507, 407);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(82, 32);
+            this.btnLoad.TabIndex = 17;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // AdminView_Movie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 469);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnAdminCancel);
             this.Controls.Add(this.dateTimePickerShow);
             this.Controls.Add(this.txtAdminViewLang);
@@ -145,5 +160,6 @@
         private System.Windows.Forms.TextBox txtAdminViewLang;
         private System.Windows.Forms.DateTimePicker dateTimePickerShow;
         private System.Windows.Forms.Button btnAdminCancel;
+        private System.Windows.Forms.Button btnLoad;
     }
 }
